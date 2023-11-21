@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" 
+          id="sap-ui-bootstrap" 
+          data-sap-ui-libs="sap.m" 
+          data-sap-ui-theme="sap_belize" 
+          data-sap-ui-compatVersion="edge" 
+          data-sap-ui-preload="async"></script>
+
+  <script>
+    sap.ui.getCore().attachInit(function() {
+      sap.ui.xmlview({
+        viewContent: '<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ibm.simpleapp.Controller.myController"><VBox><Button id="myjsbtn" text="JS Button" press="handleJsButtonClick" /><Button id="myxmlbtn1" text="XML Button" press="handleXmlButtonClick" /></VBox></mvc:View>'
+      }).placeAt("content");
+    });
+  </script>
+</head>
+
+<body class="sapUiBody" id="content">
+</body>
+
+</html>

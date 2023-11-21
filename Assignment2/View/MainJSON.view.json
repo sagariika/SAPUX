@@ -1,0 +1,23 @@
+{
+    "Type": "sap.ui.core.mvc.XMLView",
+    "content": [
+      {
+        "Type": "sap.m.VBox",
+        "content": [
+          {
+            "Type": "sap.m.Button",
+            "id": "myjsbtn",
+            "text": "JS Button",
+            "press": "handleJsButtonClick"
+          },
+          {
+            "Type": "sap.m.Button",
+            "id": "myxmlbtn1",
+            "text": "XML Button",
+            "press": "handleXmlButtonClick"
+          }
+        ]
+      }
+    ]
+  }
+  

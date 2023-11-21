@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+controllerName="com.ibm.simpleapp.Controller.Main">
+  <VBox>
+    <Button id="myjsbtn" text="JS Button" press="handleJsButtonClick" />
+    <Button id="myxmlbtn1" text="XML Button" press="handleXmlButtonClick" />
+  </VBox>
+</mvc:View>
