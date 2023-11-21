@@ -1,0 +1,30 @@
+<core:View xmlns:core='sap.ui.core' xmlns:l='sap.ui.layout' xmlns='sap.m' controllerName='sapui5.Controller.Main' xmlns:form='sap.ui.layout.form'>
+
+    <form:SimpleForm breakpointM='890'
+     columnsM='1' columnsXL='2' columnsL='1' layout="ResponsiveGridLayout">
+        <form:content >
+            <core:Title text='Personal Details'/>
+            <!-- <Label text='Name' /> -->
+            <Label text='Name '/>
+            <Input />
+            <Label text='Last Name '/>
+            <Input />
+            <Label text='Email '/>
+            <Input />
+            <Label text='PhoneName '/>
+            <Input type='Tel' />
+
+            <core:Title text='Office Details'/>
+            <!-- <Label text='Name' /> -->
+            <Label text='CompanyName '/>
+            <Input />
+            <Label text='Company Website ' />
+            <Input type='Url' />
+            <Label text='Company Phone Number '/>
+            <Input type='Tel' />
+            <Label text='Company Address '/>
+            <Input type='Text' />
+</form:content>
+        
+    </form:SimpleForm>
+</core:View>

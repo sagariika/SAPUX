@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+   
+    data-sap-ui-resourceroots='{"sapui5":"./"}'
+         src="https://sapui5.hana.ondemand.com/1.71.60/resources/sap-ui-core.js";
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-async="true"
+    ></script>
+    <script>
+         	sap.ui.getCore().attachInit(function(){
+        sap.ui.require(["sap/ui/core/mvc/View"],function(View){
+            View.create({
+                id:'idView',
+                type:'XML',
+                viewName:'sapui5.View.Main'
+            }).then(function(View){
+                View.placeAt('content')
+            }).catch(function(err){
+                console.log('Something went wrong '+err);
+            })
+
+        })
+    })
+
+</script>
+</head>
+<body id="content">
+    
+</body>
+</html>
