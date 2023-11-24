@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UI5 Fragment Example</title>
+
+    <script
+        id="sap-ui-bootstrap"
+        src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m,sap.ui.layout"
+        data-sap-ui-async="true"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-xx-bindingSyntax="complex">
+    </script>
+   
+
+<script>
+    sap.ui.getCore().attachInit(function () {
+        "use strict";
+
+        sap.ui.require([
+            "sap/ui/core/ComponentContainer"
+        ], function (ComponentContainer) {
+            new ComponentContainer({
+                name: "com.ibm.sampleapp",
+                settings: {
+                    id: "sap-ui-app"
+                },
+                async: true
+            }).placeAt("content");
+        });
+    });
+</script>
+
+   
+
+</head>
+<body class="sapUiBody">
+    <div id="content"></div>
+
+    <script>
+    
+        sap.ui.getCore().attachInit(function () {
+       
+            var oView = sap.ui.xmlview({
+                viewName: "com.ibm.sampleapp.MainView" 
+            });
+
+           
+            oView.placeAt("content");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog title="Registration" draggable="true">
+        <VBox>
+            <Label text="Name:"/>
+            <Input id="inputName"/>
+            <Label text="Email:"/>
+            <Input id="inputEmail" type="Email"/>
+            <Label text="Password:"/>
+            <Input id="inputPassword" type="Password"/>
+            <Label text="Confirm Password:"/>
+            <Input id="inputConfirmPassword" type="Password"/>
+        </VBox>
+       
+            <Button text="Login" press="onLoginPress"/>
+            <Button text="Cancel" press="onCancelPress"/>
+       
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,6 @@
+
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ibm.sampleapp.controller.Main">
+    <VBox>
+        <Button text="Register" press="onRegisterPress"/>
+    </VBox>
+</mvc:View>
